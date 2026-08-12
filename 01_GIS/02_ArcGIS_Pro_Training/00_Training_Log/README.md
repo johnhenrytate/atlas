@@ -15,3 +15,4 @@ The documentation is based on the available training materials and exercise docu
 
 Where the original training material does not provide sufficient technical detail, missing workflow steps will be reconstructed and clearly identified rather than presented as original source material.
 
+![Day 01 — GIS & ArcGIS Pro Foundations](./day_01_summary.png)
