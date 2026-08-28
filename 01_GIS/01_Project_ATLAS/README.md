@@ -1,33 +1,30 @@
-# Project ATLAS
-
-## Greater Memphis — Critical Infrastructure & Spatial Analysis
-
-Project ATLAS is the flagship applied geospatial project within this portfolio.
-
-The project focuses on the Greater Memphis metropolitan area and explores how GIS, spatial analysis, remote sensing, and infrastructure data can be combined to understand complex spatial relationships.
-
-### Current Focus
-
-- Critical infrastructure
-- Transportation
-- Hydrology
-- Elevation
-- Land cover
-- Population
-- Environmental factors
-- Spatial relationships and accessibility
-
-### Workflow
-
-Question → Data → Analysis → Visualization → Insight → Decision Support
-
 # PROJECT ATLAS
+
 ## Greater Memphis — Critical Infrastructure & Spatial Analysis
 
 **Author:** John-Henry E. Tate  
 **Project Area:** Greater Memphis Metropolitan Area, Tennessee / Mississippi / Arkansas  
 **GIS Platform:** ArcGIS Pro  
 **Project Type:** Applied GIS / Spatial Analysis / Infrastructure Assessment
+
+---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Project Status](#project-status)
+- [01 | Critical Infrastructure](#01--critical-infrastructure)
+- [02 | Energy & Infrastructure](#02--energy--infrastructure)
+- [03 | Transportation & Logistics](#03--transportation--logistics)
+- [04 | Data Centers & Urban Development](#04--data-centers--urban-development)
+- [05 | Population & Demographics](#05--population--demographics)
+- [06 | Environmental Risk & Flood Exposure](#06--environmental-risk--flood-exposure)
+- [07 | Emissions & Integrated Impact Analysis](#07--emissions--integrated-impact-analysis)
+- [Cross-Project Lessons Learned](#cross-project-lessons-learned)
+- [Final Project Reflection](#final-project-reflection)
+- [Primary Data & Reference Sources](#primary-data--reference-sources)
+- [Data Source Notes](#data-source-notes)
+- [Repository Structure](#repository-structure)
 
 ---
 
@@ -133,9 +130,9 @@ The layer was intended to answer questions such as:
 | U.S. Geological Survey (USGS) | NHD attributes including Stream Level / Stream Order | Hydrological hierarchy and feature selection | Used |
 | U.S. Census Bureau | Geographic reference data | Metropolitan and geographic context | Researched / Used |
 | Tennessee GIS | State geographic datasets | Regional geographic and infrastructure context | Researched |
-| MLGW | Utility information | Local utility infrastructure context | Researched |
-| TVA | Regional energy infrastructure information | Energy infrastructure context | Researched |
-| FAA | Airport / aviation GIS information | Aviation infrastructure | Researched |
+| Memphis Light, Gas and Water (MLGW) | Utility information | Local utility infrastructure context | Researched |
+| Tennessee Valley Authority (TVA) | Regional energy infrastructure information | Energy infrastructure context | Researched |
+| Federal Aviation Administration (FAA) | Airport / aviation GIS information | Aviation infrastructure | Researched |
 | Esri | Basemap and reference layers | Cartographic context | Used |
 | OpenStreetMap | Transportation and geographic reference | Supplementary geographic context | Researched |
 
@@ -326,10 +323,6 @@ The intended analysis asked:
 | USGS | Hydrography | Mississippi River and waterway context | Used |
 | Esri | Basemap | Cartographic reference | Used |
 
-The Census Bureau's TIGER/Line products provide standardized geographic features and can be used as a foundation for transportation and geographic analysis. :contentReference[oaicite:0]{index=0}
-
-The FAA also maintains airport GIS resources supporting airport-related geographic information. :contentReference[oaicite:1]{index=1}
-
 ## Planned GIS Analysis
 
 The intended workflow included:
@@ -488,8 +481,6 @@ The intended analysis focused on:
 | Existing project data | Critical infrastructure | Infrastructure comparison | Used |
 | Esri | Basemap | Geographic context | Used |
 
-The Census Bureau's TIGER/Line datasets provide geographic entities and codes that can be linked to Census demographic information. :contentReference[oaicite:2]{index=2}
-
 ## Planned GIS Analysis
 
 The planned workflow included:
@@ -559,15 +550,11 @@ The analysis was intended to investigate:
 |---|---|---|---|
 | U.S. Geological Survey | National Hydrography Dataset / NHDPlus | Rivers, streams and drainage network | Used |
 | U.S. Geological Survey | 3DEP elevation data | Elevation and terrain analysis | Researched |
-| FEMA | National Flood Hazard Layer (NFHL) | Flood hazard areas | Researched |
-| NOAA | Environmental / climate data | Environmental context | Researched |
+| Federal Emergency Management Agency (FEMA) | National Flood Hazard Layer (NFHL) | Flood hazard areas | Researched |
+| National Oceanic and Atmospheric Administration (NOAA) | Environmental / climate data | Environmental context | Researched |
 | U.S. Census Bureau | Geographic boundaries | Population and infrastructure overlay | Researched |
 | Existing project data | Critical infrastructure | Exposure assessment | Used |
 | Tennessee GIS | State environmental/geographic data | Regional environmental context | Researched |
-
-The USGS hydrographic datasets provide rivers, streams, canals, lakes and other surface-water features. The legacy NHD was retired in 2023, with newer hydrography development continuing through the 3D Hydrography Program. :contentReference[oaicite:3]{index=3}
-
-The legacy NHD remains available for reference and download, including NHDPlus High Resolution products. :contentReference[oaicite:4]{index=4}
 
 ## Planned GIS Analysis
 
@@ -721,8 +708,6 @@ This was particularly apparent for:
 - emissions
 - detailed local infrastructure
 
----
-
 ## 2. Large Datasets Should Be Reduced Early
 
 Several national datasets were much larger than required for the actual study area.
@@ -736,8 +721,6 @@ A more efficient workflow would be:
 rather than:
 
 **Download → Load national dataset → Symbolize → Process → Clip**
-
----
 
 ## 3. Attribute Knowledge Is Essential
 
@@ -754,8 +737,6 @@ may be more useful for analysis than the visible feature name.
 
 Understanding the attribute model is therefore an essential part of spatial analysis.
 
----
-
 ## 4. Visualization and Analysis Are Different Stages
 
 The project also demonstrated the difference between creating a visually convincing map and completing a spatial analysis.
@@ -768,8 +749,6 @@ The final project therefore distinguishes between:
 - **data preparation**
 - **planned spatial analysis**
 - **completed spatial analysis**
-
----
 
 ## 5. Performance Is a Design Constraint
 
@@ -830,11 +809,11 @@ The following organizations and datasets were investigated or used during the de
 
 # Data Source Notes
 
-USGS hydrography was particularly important to the project because it provided the flowline network used to investigate the regional river and stream system. The NHD contains networked surface-water features and attributes such as names, flow direction and stream hierarchy. The legacy NHD was retired as a maintained product in 2023, with the USGS now developing the 3D Hydrography Program as its successor. :contentReference[oaicite:5]{index=5}
+USGS hydrography was particularly important to the project because it provided the flowline network used to investigate the regional river and stream system. The NHD contains networked surface-water features and attributes such as names, flow direction and stream hierarchy. The legacy NHD was retired as a maintained product in 2023, with the USGS now developing the 3D Hydrography Program as its successor.
 
-U.S. Census Bureau TIGER/Line data were considered important for establishing standardized geographic and transportation reference layers and for linking geographic entities to demographic information. :contentReference[oaicite:6]{index=6}
+U.S. Census Bureau TIGER/Line data were considered important for establishing standardized geographic and transportation reference layers and for linking geographic entities to demographic information.
 
-FAA airport GIS resources were investigated as a source for aviation infrastructure and airport-related geographic information. :contentReference[oaicite:7]{index=7}
+FAA airport GIS resources were investigated as a source for aviation infrastructure and airport-related geographic information.
 
 ---
 
